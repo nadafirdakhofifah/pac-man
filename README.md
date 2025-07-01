@@ -1,29 +1,28 @@
-# pac-man
 # 👾 Pacman Console Game in C++
 
-Sebuah game **Pacman sederhana** yang dibangun menggunakan **C++** dan pendekatan **Object-Oriented Programming (OOP)**. Game ini dimainkan melalui terminal/console dan melibatkan logika gerakan, collision, manajemen nyawa, dan scoring.
+A simple **Pacman game** built using **C++** and **Object-Oriented Programming (OOP)** principles. This game runs in the console and features movement logic, collisions, lives, and a scoring system.
 
-## 🎮 Fitur
-- Kendali karakter Pacman dengan tombol `W`, `A`, `S`, `D`
-- Misi: kumpulkan semua dot (titik) untuk menang
-- Musuh: 1 hantu bergerak secara acak
-- Kehilangan nyawa saat bertabrakan dengan hantu
-- Game berakhir jika semua dot terkumpul atau nyawa habis
-- Tampilan berbasis karakter console
+## 🎮 Features
+- Control Pacman using `W`, `A`, `S`, `D` keys
+- Objective: collect all the dots to win
+- Avoid the ghost that moves randomly
+- Lose a life when touching the ghost
+- Game ends when all dots are collected or lives reach zero
+- Console-based character display
 
-## 🛠 Teknologi
-- Bahasa: C++
-- Konsep: Class Inheritance, Polymorphism, Dynamic Memory
-- Platform: Console (cross-platform, `system("cls")` untuk Windows, `clear` untuk Linux/Mac)
+## 🛠 Technologies
+- Language: C++
+- Concepts: Class Inheritance, Polymorphism, Dynamic Memory Management
+- Platform: Console (cross-platform — uses `system("cls")` for Windows and `clear` for Linux/macOS)
 
-## 📦 Struktur OOP
-- `Character` (abstract class): dasar untuk `Pacman` dan `Ghost`
-- `Dot`: objek collectible
-- `Pacman`: pemain utama, punya skor dan nyawa
-- `Ghost`: musuh yang bergerak acak
+## 🧱 OOP Structure
+- `Character` (abstract class): base class for both `Pacman` and `Ghost`
+- `Dot`: collectible point objects
+- `Pacman`: the main player with score and life management
+- `Ghost`: randomly moving enemy
 
-## 🚀 Cara Menjalankan
-1. Clone repo ini:
+## 🚀 How to Run
+1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/pacman-cpp.git
    cd pacman-cpp
