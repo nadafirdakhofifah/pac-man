@@ -26,3 +26,6 @@ A simple **Pacman game** built using **C++** and **Object-Oriented Programming (
    ```bash
    git clone https://github.com/yourusername/pacman-cpp.git
    cd pacman-cpp
+2. Compile using g++:
+   g++ pacman.cpp -o pacman
+   ./pacman
