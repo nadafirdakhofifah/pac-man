@@ -1,21 +1,29 @@
 # pac-man
-# 🐍 Snake Game in C++
+# 👾 Pacman Console Game in C++
 
-A classic snake game implemented using C++ and console graphics.
+Sebuah game **Pacman sederhana** yang dibangun menggunakan **C++** dan pendekatan **Object-Oriented Programming (OOP)**. Game ini dimainkan melalui terminal/console dan melibatkan logika gerakan, collision, manajemen nyawa, dan scoring.
 
-## 🎮 Features
-- Console-based snake movement using `W`, `A`, `S`, `D` keys.
-- Snake grows every time it eats food (`F`).
-- Wall warp system: snake passes through one side and appears on the opposite side.
-- Game ends when the snake hits itself or achieves a score of 40.
-- Dynamic speed increase as snake grows.
+## 🎮 Fitur
+- Kendali karakter Pacman dengan tombol `W`, `A`, `S`, `D`
+- Misi: kumpulkan semua dot (titik) untuk menang
+- Musuh: 1 hantu bergerak secara acak
+- Kehilangan nyawa saat bertabrakan dengan hantu
+- Game berakhir jika semua dot terkumpul atau nyawa habis
+- Tampilan berbasis karakter console
 
-## 🧱 Technologies Used
-- C++ Standard Library
-- `<conio.h>` for real-time input handling
-- `<windows.h>` for delay (Sleep function)
+## 🛠 Teknologi
+- Bahasa: C++
+- Konsep: Class Inheritance, Polymorphism, Dynamic Memory
+- Platform: Console (cross-platform, `system("cls")` untuk Windows, `clear` untuk Linux/Mac)
 
-## 🚀 How to Run
-1. Clone this repository:
+## 📦 Struktur OOP
+- `Character` (abstract class): dasar untuk `Pacman` dan `Ghost`
+- `Dot`: objek collectible
+- `Pacman`: pemain utama, punya skor dan nyawa
+- `Ghost`: musuh yang bergerak acak
+
+## 🚀 Cara Menjalankan
+1. Clone repo ini:
    ```bash
-   git clone https://github.com/yourusername/snake-cpp.git
+   git clone https://github.com/yourusername/pacman-cpp.git
+   cd pacman-cpp
